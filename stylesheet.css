@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+ }
+
+ @font-face {
+    font-family: 'Dekko'; /*a name to be used later*/
+    src: url('https://fonts.googleapis.com/css?family=Dekko'); /*URL to font*/
+}
+
+ body{
+   background-color: #f2f2f2;
+   position: relative;
+   display: block;
+   text-align: center;
+ }
+.titleBox{
+  position: relative;
+  width: auto;
+  height: 130px;
+  background-color: #4c4c4c;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.title{
+  font-family: 'Bungee Inline';
+  font-size: 45px;
+  color: white;
+}
+
+.buttons{
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+button{
+  border-color: transparent;
+  background-color: #f2f2f2;
+  margin: 30px;
+}
+
+img{
+  width: 200px; height: 200px;
+}
+
+img:hover{
+  transform: scale(1.2, 1.2);
+}
