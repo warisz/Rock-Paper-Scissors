@@ -3,17 +3,16 @@
     padding:0;
  }
 
- @font-face {
-    font-family: 'Dekko'; /*a name to be used later*/
-    src: url('https://fonts.googleapis.com/css?family=Dekko'); /*URL to font*/
+html{
+  position: relative;
+  min-height: 100%;
 }
-
  body{
    background-color: #f2f2f2;
-   position: relative;
-   display: block;
    text-align: center;
+
  }
+
 .titleBox{
   position: relative;
   width: auto;
@@ -30,15 +29,18 @@
   color: white;
 }
 
-.buttons{
-  text-align: center;
-  position: relative;
-  top: 45px;
+.buttonBox{
+  display: inline-block;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
+
 button{
   border-color: transparent;
   background-color: #f2f2f2;
   margin: 30px;
+  margin-top: 60px;
 }
 
 img{
@@ -47,4 +49,84 @@ img{
 
 img:hover{
   transform: scale(1.2, 1.2);
+}
+
+.userScoreBox, .computerScoreBox{
+  top: 200px;
+  width: 14.5%;
+  height: 150px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 3px solid black;
+}
+
+.userScoreBox p, .computerScoreBox p{
+  position: relative;
+  font-family: Helvetica;
+  font-weight: bold;
+  top: 15px;
+}
+
+.userScoreBox{
+  position: absolute;
+  left: 50px;
+  background-color: #4f91f9;
+}
+
+.computerScoreBox{
+  position: absolute;
+  right: 50px;
+  background-color: #ff4268;
+}
+
+.score{
+  position: relative;
+  top:40px;
+  font-family: Helvetica;
+  font-size: 50px;
+}
+
+.resultsBox{
+  text-align: center;
+  margin-top: 0px;
+
+}
+#result{
+  font-family: 'Bungee Inline', Helvetica;
+  font-size: 20px
+}
+
+#reset{
+  background-color: #cecece;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+#reset p{
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+}
+.creds{
+  font-family: 'Bungee Inline';
+  color: white;
+  font-size: 20px;
+}
+
+a{
+  color: white;
+  text-decoration: underline;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #4c4c4c;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }

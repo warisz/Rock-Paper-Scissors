@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
-    <link rel="icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" type="image/png" href="./images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
   </head>
 
@@ -12,11 +13,35 @@
       <h1 class="title">Rock Paper Scissors</h1>
     </div>
 
-    <div class="buttons">
-      <button class="rock"><img src="./images/rock.png" alt=Rock></button>
-      <button class="paper"><img src="./images/paper.png" alt=Paper></button>
-      <button class="scissors"><img src="./images/scissors.png" alt=Scissors></button>
+    <div class="buttonBox">
+
+      <div class="userScoreBox">
+        <p>Your Points:</p>
+        <h2 id="userScore" class="score"> 0 </h2>
+      </div>
+
+      <button id="Rock" class="rock" onclick="startRound(this.id)"><img src="./images/rock.png" alt=Rock></button>
+      <button id="Paper" class="paper" onclick="startRound(this.id)"><img src="./images/paper.png" alt=Paper></button>
+      <button id="Scissors" class="scissors" onclick="startRound(this.id)"><img src="./images/scissors.png" alt=Scissors></button>
+
+      <div class="computerScoreBox">
+        <p>Computer Points:</p>
+        <h2 id="compScore" class="score"> 0 </h2>
+      </div>
+
     </div>
+
+    <div class="resultsBox">
+      <p id="result">First to 5 points wins!</p>
+    </div>
+
+    <button id="reset" onclick="reset()"><p>Reset Game</p></button>
+
+    <footer>
+      <p class="creds">Created by <a href="https://github.com/warisz"> Waris Zahoor</a><p>
+    </footer>
   </body>
+
+
 
 </html>
